@@ -1,0 +1,62 @@
+init(MAX_N) :- cycle(2, MAX_N).
+
+% composite(N) => checked O(sqrt(N))
+% prime(N) <=> not composite
+% divisors_table(N, R) <=> N = R * K O(sqrt(N))
+
+cycle(I, N) :-
+		prime(I),
+		Im is I * I,
+		strikeout(Im, I, N).
+
+cycle(I, N) :-
+    Im is I + 1,
+    Im =< sqrt(N),
+    cycle(Im, N).
+
+strikeout(It, I, N) :-
+	It =< N,
+    assert(composite(It)),
+    assert(divisors_table(It, I)),
+    I1 is It + I,
+    strikeout(I1, I, N).
+
+prime(1) :- !, false.
+prime(N) :- \+ composite(N).
+
+divisors_table(I, I) :-
+    prime(I).
+
+
+prime_divisors(1, []) :- !.
+prime_divisors(N, [H | T]) :-
+	number(N),
+	divisors_table(N, H),
+	A is div (N, H),
+	prime_divisors(A, T),
+	!.
+prime_divisors(N, [H | T]) :-
+	number(H),
+	prime_divisors(N, H, [H | T]).
+
+
+prime_divisors(1, _, []) :- !.
+prime_divisors(N, L, [H | T]) :-
+	H >= L,
+	prime(H),
+	prime_divisors(N1, H, T),
+	N is N1 * H.
+
+unique_prime_divisors(N, Unique):-
+    prime_divisors(N, Divisors),
+    single(1, Divisors, [], Unique).
+
+single(Prev, [], D, U) :-
+    U = D, !.
+single(Prev, [H | T], D, U) :-
+    (H > Prev,
+        H1 = [H],
+        append(D, H1, D1),
+        single(H, T, D1, U)) ;
+    (H = Prev,
+        single(H, T, D, U)).
