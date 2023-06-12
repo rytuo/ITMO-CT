@@ -1,0 +1,255 @@
+MiB Mem :   1987,8 total,    503,0 free,    981,9 used,    502,9 bu
+MiB Swap:    466,6 total,     73,3 free,    393,3 used.    782,5 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0   17680  11232   2884 R  29,4   0,6
+ 109641 rytuo     20   0   20320  14012   3028 R  35,3   0,7
+ 109642 rytuo     20   0   20452  14136   2884 R  35,3   0,7
+   1646 rytuo     20   0 1110976 137476  21336 S   5,9   6,8
+      1 root      20   0  167724   6104   4256 S   0,0   0,3
+      2 root      20   0       0      0      0 S   0,0   0,0
+
+
+MiB Mem :   1987,8 total,    453,1 free,   1031,9 used,    502,9 bu
+MiB Swap:    466,6 total,     73,3 free,    393,3 used.    732,5 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0   43552  37104   2884 R  33,3   1,8
+ 109642 rytuo     20   0   46192  39744   2884 R  44,4   2,0
+ 109641 rytuo     20   0   46060  39620   3028 R  38,9   1,9
+   1646 rytuo     20   0 1111108 137724  21348 S   5,6   6,8
+      1 root      20   0  167724   6104   4256 S   0,0   0,3
+      2 root      20   0       0      0      0 S   0,0   0,0
+
+
+MiB Mem :   1987,8 total,    403,3 free,   1081,5 used,    502,9 bu
+MiB Swap:    466,6 total,     73,3 free,    393,3 used.    682,8 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0   69028  62448   2884 R  33,3   3,1
+ 109641 rytuo     20   0   71404  65228   3028 R  35,3   3,2
+ 109642 rytuo     20   0   71536  65088   2884 R  35,3   3,2
+   1354 rytuo     20   0 3690504 228108  90988 S   5,9  11,2
+   1646 rytuo     20   0 1111108 137724  21348 S   5,9   6,8
+      1 root      20   0  167724   6104   4256 S   0,0   0,3
+
+
+MiB Mem :   1987,8 total,    352,4 free,   1132,5 used,    502,9 bu
+MiB Swap:    466,6 total,     73,3 free,    393,3 used.    631,9 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0   95032  88584   2884 R  35,3   4,4
+ 109641 rytuo     20   0   96748  90308   3028 R  33,3   4,4
+ 109642 rytuo     20   0   97012  90432   2884 R  27,8   4,4
+  27352 rytuo     20   0 2641796 234820 118444 S  11,1  11,5
+   1354 rytuo     20   0 3690504 228108  90988 S   5,6  11,2
+   1646 rytuo     20   0 1111240 137724  21348 S   5,6   6,8
+
+
+MiB Mem :   1987,8 total,    304,1 free,   1180,7 used,    503,0 bu
+MiB Swap:    466,6 total,     73,3 free,    393,3 used.    583,7 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0  119584 113136   2884 R  35,3   5,6
+ 109641 rytuo     20   0  121168 114860   3028 R  31,6   5,6
+ 109642 rytuo     20   0  122224 115776   2884 R  31,6   5,7
+   1646 rytuo     20   0 1111240 137988  21348 S   5,3   6,8
+      1 root      20   0  167724   6104   4256 S   0,0   0,3
+      2 root      20   0       0      0      0 S   0,0   0,0
+
+
+MiB Mem :   1987,8 total,    256,4 free,   1228,5 used,    503,0 bu
+MiB Swap:    466,6 total,     73,3 free,    393,3 used.    535,9 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0  143344 136896   2884 R  23,5   6,7
+ 109642 rytuo     20   0  145720 139272   2884 R  37,5   6,8
+ 109641 rytuo     20   0  144796 138356   3028 R  25,0   6,8
+   1646 rytuo     20   0 1111372 137988  21348 S   6,2   6,8
+      1 root      20   0  167724   6104   4256 S   0,0   0,3
+      2 root      20   0       0      0      0 S   0,0   0,0
+
+
+MiB Mem :   1987,8 total,    211,9 free,   1273,0 used,    503,0 bu
+MiB Swap:    466,6 total,     73,3 free,    393,3 used.    491,4 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0  166312 159864   2884 R  27,8   7,9
+ 109641 rytuo     20   0  167368 161060   3028 R  31,2   7,9
+ 109642 rytuo     20   0  168028 161448   2884 R  18,8   7,9
+   1354 rytuo     20   0 3690504 228108  90988 S  12,5  11,2
+   1646 rytuo     20   0 1111372 137988  21348 S   6,2   6,8
+      1 root      20   0  167724   6104   4256 S   0,0   0,3
+
+
+MiB Mem :   1987,8 total,    169,0 free,   1315,8 used,    503,0 bu
+MiB Swap:    466,6 total,     73,3 free,    393,3 used.    448,6 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0  188488 182040   2884 R  37,5   8,9
+ 109641 rytuo     20   0  189544 183236   3028 R  22,2   9,0
+ 109642 rytuo     20   0  190204 183624   2884 R  22,2   9,0
+   1354 rytuo     20   0 3690504 228140  90988 R  11,1  11,2
+   1646 rytuo     20   0 1111504 137988  21348 S   5,6   6,8
+      1 root      20   0  167724   6104   4256 S   0,0   0,3
+
+
+MiB Mem :   1987,8 total,    123,8 free,   1361,1 used,    503,0 bu
+MiB Swap:    466,6 total,     73,3 free,    393,3 used.    403,3 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0  211720 205272   2884 R  35,3  10,1
+ 109641 rytuo     20   0  213040 206732   3028 R  26,3  10,2
+ 109642 rytuo     20   0  213832 207384   2884 R  21,1  10,2
+   1138 rytuo     20   0  284100  68520  34564 S   5,3   3,4
+   1354 rytuo     20   0 3690504 228140  90988 R   5,3  11,2
+   1673 rytuo     20   0  969336  35204  23420 S   5,3   1,7
+
+
+MiB Mem :   1987,8 total,     77,7 free,   1407,1 used,    503,0 bu
+MiB Swap:    466,6 total,     73,3 free,    393,3 used.    357,3 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0  234952 228504   2884 R  37,5  11,2
+ 109641 rytuo     20   0  236404 229964   3028 R  29,4  11,3
+ 109642 rytuo     20   0  237196 230616   2884 R  29,4  11,3
+   1138 rytuo     20   0  284100  68520  34564 S   5,9   3,4
+   1354 rytuo     20   0 3690504 228140  90988 S   5,9  11,2
+   1646 rytuo     20   0 1111636 138252  21348 S   5,9   6,8
+
+
+MiB Mem :   1987,8 total,     79,8 free,   1447,3 used,    460,8 bu
+MiB Swap:    466,6 total,     72,7 free,    393,8 used.    317,6 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0  256864 250416   2884 R  37,5  12,3
+ 109641 rytuo     20   0  258580 252140   3028 R  35,3  12,4
+ 109642 rytuo     20   0  259372 252792   2884 R  35,3  12,4
+   1646 rytuo     20   0 1111768 137732  21348 S   5,9   6,8
+      1 root      20   0  167724   6100   4256 S   0,0   0,3
+      2 root      20   0       0      0      0 S   0,0   0,0
+
+
+MiB Mem :   1987,8 total,     76,4 free,   1487,4 used,    423,9 bu
+MiB Swap:    466,6 total,     72,3 free,    394,2 used.    277,4 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0  279040 272592   2884 R  35,3  13,4
+ 109642 rytuo     20   0  281812 275232   2884 R  43,8  13,5
+ 109641 rytuo     20   0  281020 274580   3028 R  37,5  13,5
+      1 root      20   0  167724   6100   4256 S   0,0   0,3
+      2 root      20   0       0      0      0 S   0,0   0,0
+      3 root       0 -20       0      0      0 I   0,0   0,0
+
+
+MiB Mem :   1987,8 total,     64,4 free,   1532,8 used,    390,6 bu
+MiB Swap:    466,6 total,     72,2 free,    394,3 used.    232,1 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0  301612 295032   2884 R  35,3  14,5
+ 109642 rytuo     20   0  304648 298200   2884 R  38,9  14,6
+ 109641 rytuo     20   0  303592 297284   3028 R  33,3  14,6
+   1646 rytuo     20   0 1111900 137644  21332 S   5,6   6,8
+      1 root      20   0  167724   6076   4232 S   0,0   0,3
+      2 root      20   0       0      0      0 S   0,0   0,0
+
+
+MiB Mem :   1987,8 total,     72,1 free,   1577,4 used,    338,3 bu
+MiB Swap:    466,6 total,     72,2 free,    394,4 used.    188,0 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0  324712 318204   2824 R  29,4  15,6
+ 109642 rytuo     20   0  327220 320580   2824 R  43,8  15,7
+ 109641 rytuo     20   0  326296 319928   2968 R  37,5  15,7
+     81 root      20   0       0      0      0 S   6,2   0,0
+   1646 rytuo     20   0 1111900 136376  20064 S   6,2   6,7
+  27352 rytuo     20   0 2641796 229904 113268 S   6,2  11,3
+
+
+MiB Mem :   1987,8 total,     64,1 free,   1621,4 used,    302,3 bu
+MiB Swap:    466,6 total,     72,1 free,    394,5 used.    144,4 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0  346888 340376   2820 R  35,3  16,7
+ 109641 rytuo     20   0  348604 342364   2964 R  41,2  16,8
+ 109642 rytuo     20   0  349660 343016   2820 R  41,2  16,9
+   1646 rytuo     20   0 1112032 124428   8128 S   5,9   6,1
+      1 root      20   0  167724   5488   3644 S   0,0   0,3
+      2 root      20   0       0      0      0 S   0,0   0,0
+
+
+MiB Mem :   1987,8 total,     79,6 free,   1667,1 used,    241,2 bu
+MiB Swap:    466,6 total,     71,7 free,    394,8 used.     98,8 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0  370252 363872   2820 R  29,4  17,9
+ 109642 rytuo     20   0  372760 366248   2820 R  35,3  18,0
+ 109641 rytuo     20   0  371704 365332   2964 R  29,4  17,9
+   1354 rytuo     20   0 3690504 184856  47752 S   5,9   9,1
+   1646 rytuo     20   0 1112032 123828   7496 S   5,9   6,1
+   1673 rytuo     20   0  969336  19944   8160 S   5,9   1,0
+
+
+MiB Mem :   1987,8 total,     70,3 free,   1711,0 used,    206,6 bu
+MiB Swap:    466,6 total,     69,8 free,    396,8 used.     60,5 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0  393484 386840   2820 R  31,2  19,0
+ 109641 rytuo     20   0  394144 387772   2964 R  22,2  19,1
+ 109642 rytuo     20   0  395332 388688   2820 R  22,2  19,1
+     81 root      20   0       0      0      0 S  11,1   0,0
+   1138 rytuo     20   0  284100  65880  32000 S   5,6   3,2
+   1354 rytuo     20   0 3690504 183656  46596 S   5,6   9,0
+
+
+MiB Mem :   1987,8 total,     68,2 free,   1751,5 used,    168,2 bu
+MiB Swap:    466,6 total,     65,7 free,    400,9 used.     39,3 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0  414868 408480   2812 R  37,5  20,1
+ 109641 rytuo     20   0  415660 409112   2920 R  29,4  20,1
+ 109642 rytuo     20   0  416848 410328   2812 R  29,4  20,2
+   1354 rytuo     20   0 3690504 167464  31544 S  11,8   8,2
+   1138 rytuo     20   0  284100  65532  31664 S   5,9   3,2
+   1673 rytuo     20   0  969336  17680   5904 S   5,9   0,9
+
+
+MiB Mem :   1987,8 total,     72,1 free,   1777,3 used,    138,5 bu
+MiB Swap:    466,6 total,     51,6 free,    415,0 used.     28,5 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0  435592 428956   2696 R  31,6  21,1
+ 109641 rytuo     20   0  436120 429588   2804 R  19,2  21,1
+ 109642 rytuo     20   0  437704 431068   2696 R  15,4  21,2
+     81 root      20   0       0      0      0 S  11,5   0,0
+    119 root       0 -20       0      0      0 I   7,7   0,0
+   1354 rytuo     20   0 3690504 155672  33560 S   3,8   7,6
+
+
+MiB Mem :   1987,8 total,     73,8 free,   1777,8 used,    136,3 bu
+MiB Swap:    466,6 total,      0,0 free,    466,6 used.     29,5 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0  455392 448756   2696 R  29,4  22,0
+     81 root      20   0       0      0      0 S  22,7   0,0
+ 109642 rytuo     20   0  457372 449796   1624 R  22,7  22,1
+ 109641 rytuo     20   0  455788 448272   1716 R  18,2  22,0
+   1354 rytuo     20   0 3690504 134776  26392 S   4,5   6,6
+   1646 rytuo     20   0 1112428 105524   5084 S   4,5   5,2
+
+
+MiB Mem :   1987,8 total,     61,9 free,   1802,4 used,    123,6 bu
+MiB Swap:    466,6 total,      0,0 free,    466,6 used.     11,3 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0  468064 459160    456 R  10,0  22,6
+     81 root      20   0       0      0      0 R  39,1   0,0
+   1646 rytuo     20   0 1112428 100840    200 S   8,7   5,0
+ 109641 rytuo     20   0  467404 458696    572 R   8,7  22,5
+ 109642 rytuo     20   0  469120 460240    496 R   8,7  22,6
+   1138 rytuo     20   0  284100  59992  30060 S   4,3   2,9
+
+
+MiB Mem :   1987,8 total,     51,5 free,   1817,8 used,    118,4 bu
+MiB Swap:    466,6 total,      0,0 free,    466,6 used.     16,8 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109642 rytuo     20   0  476644 467708    372 R   2,0  23,0
+     81 root      20   0       0      0      0 R  15,9   0,0
+   1646 rytuo     20   0 1112560 100856    156 D  15,9   5,0
+  26895 rytuo     20   0 3049200 213348  21796 R   6,8  10,5
+  27352 rytuo     20   0 2641796 131688  14500 R   6,8   6,5
+   1354 rytuo     20   0 3690504 126064  17700 D   4,5   6,2
+
+
+MiB Mem :   1987,8 total,     51,7 free,   1827,9 used,    108,2 bu
+MiB Swap:    466,6 total,      0,0 free,    466,6 used.     11,8 av
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM
+ 109641 rytuo     20   0  485752 477716   1352 R  23,5  23,5
+  26895 rytuo     20   0 3049200 231776  39888 R  11,8  11,4
+  27273 rytuo     20   0 2474320  87072  44716 S  11,8   4,3
+  27352 rytuo     20   0 2641796 151736  34408 R  11,8   7,5
+   1354 rytuo     20   0 3690504 139608  30652 R   5,9   6,9
+
+
+Crash log: 
+[ 6495.000916] Out of memory: Killed process 109642 (mem2.bash) total-vm:485752kB, anon-rss:476556kB, file-rss:0kB, shmem-rss:0kB, UID:1000 pgtables:984kB oom_score_adj:0
+[ 6495.036380] oom_reaper: reaped process 109642 (mem2.bash), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB

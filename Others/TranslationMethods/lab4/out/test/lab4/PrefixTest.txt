@@ -1,0 +1,3 @@
+= abc or t0_ and q not q
+= abc == True < 11 * 24 / 0 1
+(if > 22 31 print 37 if > 24 - 27 42 print + 43 72724)

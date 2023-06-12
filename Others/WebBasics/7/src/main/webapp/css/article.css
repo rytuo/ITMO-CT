@@ -1,0 +1,52 @@
+/* articles */
+.articles .article {
+    margin-bottom: 1.5rem;
+}
+
+.articles .title {
+    color: var(--caption-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.articles .information {
+    color: var(--shaded-text-color);
+    font-size: 1rem;
+}
+
+.articles .header, .articles .body {
+    margin-bottom: 0.5rem;
+}
+
+.articles .text {
+    padding-left: 1rem;
+    border-left: 4px solid var(--border-color);
+}
+
+.articles .footer {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    padding: 0.2rem 0.8rem;
+}
+
+.articles .footer .left {
+    display: inline-block;
+}
+
+.articles .footer .score {
+    position: relative;
+    bottom: 3px;
+    font-weight: bold;
+    color: var(--dark-green-color);
+}
+
+.articles .footer .right {
+    float: right;
+}
+
+.articles .footer .right img {
+    position: relative;
+    top: 3px;
+}

@@ -1,0 +1,42 @@
+#!/bin/bash
+
+echo $$ > .pid
+
+val=1
+mode="sum"
+
+usr1()
+{
+	mode="sum"
+}
+trap 'usr1' USR1
+
+usr2()
+{
+	mode="mul"
+}
+trap 'usr2' USR2
+
+sigterm()
+{
+	mode="term"
+}
+trap 'sigterm' SIGTERM
+
+while true
+do
+	echo "$val"
+	case "$mode" in
+		"sum")
+			(( val+=2 ))
+			;;
+		"mul")
+			(( val*=2 ))
+			;;
+		"term")
+			echo "SCRIPT STOPPED MANUALLY"
+			exit
+			;;
+	esac
+	sleep 1
+done

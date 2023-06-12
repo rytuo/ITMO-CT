@@ -1,0 +1,71 @@
+#!/bin/bash
+
+if [[ $# != 1 ]]
+then
+	echo "ERROR: Please enter one file name from current directory"
+	exit
+fi
+
+name="${1##*/}"
+if [[ "$name" != "$1" ]]
+then
+	echo "ERROR: Please enter valid file simple name"
+	exit
+fi
+
+if [[ ! -d ~/.trash ]]
+then
+	echo "ERROR: Can't find trash"
+	exit
+fi
+
+if [[ ! -f ~/.trash.log ]]
+then
+	echo "ERROR: Missing mapping file trash.log"
+	exit
+fi
+
+if [[ $(grep -E "$name$" ~/.trash.log) == "" ]]
+then
+	echo "ERROR: This file was not deleted"
+	exit
+fi
+
+IFS=$'\n'
+for line in $(grep -E "$name$" ~/.trash.log)
+do
+	filein=$(echo "$line" | awk '{print $1}')
+	fileout=$(echo "$line" | awk '{print substr($0, length($1) + 2)}')
+	echo "Restore $fileout ? (Y/N)"
+	ans=""
+	while ! [[ "$ans" =~ [YNyn] ]]
+	do
+		read ans
+	done
+	if [[ "$ans" =~ [Yy] ]]
+	then
+		if [[ ! -d $(dirname "$fileout") ]]
+		then
+			fileout="$HOME/$name"
+			echo "WARNING: Catalog doesn't exist. File will be restored to $HOME"
+		fi
+		while [[ -f "$fileout" ]]
+		do
+			echo "WARNING: File with this name already exists. Please enter new name:"
+			read name
+			while [[ "$name" != "${name##*/}" ]]
+			do
+				echo "Please enter a valid file name:"
+				read name
+			done
+			fileout="$(dirname fileout)/$name"
+		done
+		ln "$filein" "$fileout"
+		rm "$filein"
+		cat ~/.trash.log | awk -v x=$filein '$1 != x {print $0}' > ~/.trash.log1
+		cat ~/.trash.log1 > ~/.trash.log
+		rm ~/.trash.log1
+		echo "Success"
+		exit
+	fi
+done

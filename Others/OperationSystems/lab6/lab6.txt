@@ -1,0 +1,51 @@
+"open cmd in admin mode"
+
+################  1  ################
+
+mkdir C:\LAB6
+cd C:\LAB6
+
+ver > ver.txt
+systeminfo | find "Physical Memory" > systeminfo.txt
+echo list disk | diskpart > diskpart.txt
+
+mkdir TEST
+copy * TEST
+cd TEST
+
+copy * all.txt
+
+for /f "skip=1 delims=" %a in ('dir "C:\LAB6\TEST" /b /o-d /a-d') do del %a
+
+################  2  ################
+
+cd C:\LAB6
+
+hostname
+mkdir NetRes
+net share temp=C:\LAB6\NetRes /grant:everyone,FULL 
+
+In 'task.bat':
+	copy /y /z C:\Windows\explorer.exe \\%computername%\temp > C:\LAB6\task.bat
+
+schtasks /create /tn task /sc MINUTE /tr task.bat
+taskkill task
+
+fc C:\Windows\explorer.exe \\%computername%\temp\explorer.exe
+
+################  3  ################
+
+sc query > tasks1.txt
+
+In 'tasks.bat':
+	sc stop dnscache
+	timeout /t 30
+	sc query > tasks2.txt
+	fc tasks1.txt tasks2.txt > tasksDiff.txt
+	sc start dnscache
+
+################  4  ################
+
+driverquery /nh /fo table > Drivers.txt
+
+sort Drivers.txt /r /o DriversSorted.txt

@@ -1,0 +1,45 @@
+#!/bin/bash
+
+shopt -s dotglob
+IFS=$'\n'
+
+# sourceDir restoreDir
+function restore() {
+	for file in "$1"/*
+	do
+		if ! [[ "${file##*/}" =~ \.[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]
+		then
+			if [[ -f "$file" ]]
+			then
+				cp "$file" "$2/${file##*/}"
+			else
+				mkdir "$2/${file##*/}"
+				restore "$file" "$2/${file##*/}"
+			fi
+		fi
+	done
+}
+
+latest=""
+max=0
+
+for file in $(find ~/ -regextype posix-extended -regex "^$HOME/Backup-[0-9]{4}-[0-9]{2}-[0-9]{2}$")
+do
+	d=$(date -d "${file##*/Backup-}" +%s)
+	if [[ $d -gt $max ]]
+	then
+		max=$d
+		latest="$file"
+	fi
+done
+
+if [[ "$latest" == "" ]]
+then
+	echo "ERROR: No backup found"
+	exit
+fi
+
+rm -Rf "$HOME/restore"
+mkdir ~/restore
+
+restore "$file" "$HOME/restore"

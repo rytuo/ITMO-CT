@@ -1,0 +1,4 @@
+rootProject.name = 'sd3'
+include 'client'
+include 'stock'
+

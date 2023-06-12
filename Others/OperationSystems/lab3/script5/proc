@@ -1,0 +1,32 @@
+#!/bin/bash
+
+mode="+"
+val=1
+echo "$val"
+numREGEX="^-?[0-9]+$"
+
+(tail -f pipe) |
+while true
+do
+	read LINE
+	if [[ "$LINE" == "QUIT" ]]; then
+		echo "SCRIPT STOPPED WORKING MANUALLY"
+		kill $(pgrep -P $$ tail)
+		kill $(cat .pid)
+		exit
+	elif [[ "$LINE" == "+" || "$LINE" == "*" ]]; then
+		mode="$LINE"
+	elif [[ "$LINE" =~ $numREGEX ]]; then
+		if [[ "$mode" == "+" ]]; then
+			(( val+=$LINE ))
+		else
+			(( val*=$LINE ))
+		fi
+		echo "$val"
+	else
+		echo "ERROR: INVALID INPUT"
+		kill $(pgrep -P $$ tail)
+		kill $(cat .pid)
+		exit
+	fi
+done

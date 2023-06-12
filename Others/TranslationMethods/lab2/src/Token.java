@@ -1,0 +1,16 @@
+public enum Token {
+    KEY,
+    VAR,
+    QUOTE,
+    COLON,
+    ADD,
+    SUB,
+    MUL,
+    DIV,
+    MOD,
+    FLOOR_DIV,
+    NUM,
+    OPEN,
+    CLOSE,
+    END,
+}

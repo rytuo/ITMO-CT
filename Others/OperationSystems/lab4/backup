@@ -1,0 +1,75 @@
+#!/bin/bash
+
+shopt -s dotglob
+IFS=$'\n'
+
+function printCatalog() {
+	for file in "$1"/*
+	do
+		if [[ -f "$file" ]]
+		then
+			echo "svd: $file" >> ~/backup-report
+		else
+			printCatalog "$file"
+		fi
+	done
+}
+
+function compare() {
+	for file in "$1"/*
+	do
+		if [[ -f "$file" ]]
+		then
+			if [[ $(find "$2" -regextype posix-extended -regex "^$2/${file##*/}$") == "" ]]
+			then
+				echo "svd: $file" >> ~/backup-report
+				cp "$file" "$2"
+			else
+				if (( $(stat -c%s "$file") != $(stat -c%s "$2/${file##*/}") ))
+				then
+					echo "upd: $file" >> ~/backup-report
+					if [[ $(find "$2" -regextype posix-extended -regex "^$2/${file##*/}.$3$") != "" ]]
+					then
+						rm "$2/${file##*/}.$3"
+					fi
+					mv "$2/${file##*/}" "$2/${file##*/}.$3"
+					cp "$file" "$2"
+				fi
+			fi
+		else
+			mkdir "$2/${file##*/}" &>/dev/null
+			compare "$file" "$2/${file##*/}" "$3"
+		fi
+	done
+}
+
+file=""
+max=0
+for f in $(find ~/ -regextype posix-extended -regex "^$HOME/Backup-[0-9]{4}-[0-9]{2}-[0-9]{2}$")
+do
+	d=$(date -d "${f##*/Backup-}" +%s)
+	if [[ $d -gt $max ]]
+	then
+		file="$f"
+		max=$d
+	fi
+done
+
+if (( $(date -d "${file##*/Backup-}" +%s) - $(date +%s) > 604800 ))
+then
+	file=""
+fi
+
+if [[ "$file" == "" ]]
+then
+	file="$HOME/Backup-$(date +%F)"
+	mkdir "$file"
+	echo "New backup created in \"$file\" at $(date +%F-%T) :" >> ~/backup-report
+	cp -R "$HOME/source/." "$file"
+	echo "Backuped files:" >> ~/backup-report
+	printCatalog "$HOME/source"
+else
+	echo "Updated backup in \"$file\" at $(date +%F-%T) :" >> ~/backup-report
+	echo "Backuped files:" >> ~/backup-report
+	compare "$HOME/source" "$file" "$(date +%F)"
+fi

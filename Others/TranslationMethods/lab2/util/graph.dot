@@ -1,0 +1,16 @@
+strict digraph {
+Lambda_2 -> {lambda colon Add_3}
+Add_3 -> {Mul_4}
+Mul_4 -> {Val_5}
+Val_5 -> {open Par_21}
+Par_21 -> {Lambda_8 close}
+Lambda_8 -> {lambda colon Add_9}
+Add_9 -> {Mul_10}
+Mul_10 -> {Val_11}
+Val_11 -> {open Par_19}
+Par_19 -> {Lambda_14 close}
+Lambda_14 -> {lambda colon Add_15}
+Add_15 -> {Mul_16}
+Mul_16 -> {Val_17}
+Val_17 -> {1}
+}

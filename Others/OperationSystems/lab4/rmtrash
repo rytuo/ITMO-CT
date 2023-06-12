@@ -1,0 +1,37 @@
+#!/bin/bash
+
+if (( $# != 1 ))
+then
+	echo "ERROR: Please enter one file name from current directory"
+	exit
+fi
+
+path=$(realpath "$1")
+
+if [[ ! -f "$path" ]]
+then
+	echo "ERROR: File doesn't exist"
+	exit
+fi
+
+if [[ $(find ~/ -maxdepth 1 -type d -name .trash) == "" ]]
+then
+	mkdir ~/.trash
+fi
+
+if [[ $(find ~/ -maxdepth 1 -name .trash.log) == "" ]]
+then
+	touch ~/.trash.log
+fi
+
+n=1
+while [[ $(find ~/.trash -name "$n") != "" ]]
+do
+	(( n++ ))
+done
+
+ln "$path" ~/.trash/$n
+rm "$path"
+
+echo "$HOME/.trash/$n $path" >> ~/.trash.log
+echo "File $path was removed successfully"

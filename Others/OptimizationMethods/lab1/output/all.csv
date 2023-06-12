@@ -1,0 +1,6 @@
+name,result,number of iterations
+Dichotomy,2.7064749278,72
+Golden section,2.7064755731,52
+Fibonacci,2.7064755755,53
+Parabolic,2.7064755834,27
+Combined Brent,2.7064755765,20

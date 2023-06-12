@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LockFreedomTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-21T16:57:03" hostname="rytuo" time="5.02">
+  <properties/>
+  <testcase name="testLockFreedom" classname="LockFreedomTest" time="5.02"/>
+  <system-out><![CDATA[=== LockFreedomTest
+--- 0: Performed 0 operations
+--- 1: Performed 2756 operations (pause/resumes 34)
+--- 2: Performed 3207 operations (pause/resumes 37)
+--- 3: Performed 3278 operations (pause/resumes 37)
+--- 4: Performed 3724 operations (pause/resumes 39)
+--- 5: Performed 4035 operations (pause/resumes 40)
+------ Done with 4039 operations (pause/resumes 41)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
